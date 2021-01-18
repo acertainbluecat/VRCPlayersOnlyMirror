@@ -8,6 +8,10 @@ This is NOT a 2D camera cut out, it is a full 3D mirror.
   - Adjustable mirror transparency
   - Works on both PC and Quest worlds
 
+# Downloads
+  - [For SDK2 Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1/VRCPlayersOnlyMirrorSDK2.unitypackage)
+  - [For SDK3 Udon Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1/VRCPlayersOnlyMirrorSDK3.unitypackage)
+
 # Requirements
   - VRChat SDK2 or SDK3
 
