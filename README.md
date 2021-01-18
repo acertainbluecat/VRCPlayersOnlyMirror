@@ -7,6 +7,7 @@ This is NOT a 2D camera cut out, it is a full 3D mirror.
   - Player reflections in mirrors without any background
   - Adjustable mirror transparency
   - Works on both PC and Quest worlds
+  - Performance cost more or less the same as a LQ mirror, with 1 additional drawcall
 
 # Downloads
   - [For SDK2 Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1/VRCPlayersOnlyMirrorSDK2.unitypackage)
