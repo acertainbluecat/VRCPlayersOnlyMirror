@@ -9,6 +9,7 @@
         _Transparency("Transparency", Range(0, 1)) = 1
         _TransparencyTex("Transparency Mask", 2D) = "white" {}
         _DistanceFade("Distance Fade", Range(0,20)) = 0
+        _DistanceFadeLength("Distance Fade Length", Range(0,10)) = 1
         //Stencils
         _Stencil ("Stencil ID", Float) = 0
         [Enum(UnityEngine.Rendering.CompareFunction)] _StencilCompareAction ("Stencil Compare Function", int) = 0
@@ -50,6 +51,7 @@
             float _HideBackground;
             float _Transparency;
             float _DistanceFade;
+            float _DistanceFadeLength;
 
             sampler2D _ReflectionTex0;
             sampler2D _ReflectionTex1;
@@ -111,7 +113,7 @@
 
                 // distance fade
                 if (_DistanceFade > 0) {
-                    refl.a *= (1 - clamp(distance(i.distance, mul(unity_WorldToObject, float4(_WorldSpaceCameraPos, 1.0))) - _DistanceFade, 0, 1));
+                    refl.a *= 1 - smoothstep(_DistanceFade, _DistanceFade + _DistanceFadeLength, distance(i.distance, mul(unity_WorldToObject, float4(_WorldSpaceCameraPos, 1.0))));
                 }
 
                 refl *= tex;             
