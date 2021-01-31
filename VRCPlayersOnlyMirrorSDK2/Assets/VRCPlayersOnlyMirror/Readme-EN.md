@@ -25,8 +25,8 @@ This is NOT a 2D camera cut out, it is a full 3D mirror.
   - **Hide Background** - Hides the background, requires the TransparentBackground shader acting as a fake background for the mirror for this to work
   - **Transparency** - Adjust transparency of the mirror
   - **Transparency Mask** - Texture mask that adjusts the transparency of the mirror, goes from white for fully opauque, to fully transparent with black. Mainly used to adjust the transparency of the entire mirror in real time for SDK2 as you can't animate mirror material properties on SDK2. See Next section for more details.
-  - **Distance Fade** - Distance before the mirror starts fading to zero alpha.
-  - **Distance Fade Length** - The length of distance traveled needed the fade to zero alpha.
+  - **Distance Fade** - Distance before the mirror starts fading to zero alpha. Disabled at 0.
+  - **Distance Fade Length** - The length of distance traveled needed to fade to zero alpha.
 
 # SDK2
 
