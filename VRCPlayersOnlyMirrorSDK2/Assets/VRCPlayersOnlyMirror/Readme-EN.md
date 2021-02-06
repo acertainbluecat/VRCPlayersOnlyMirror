@@ -44,3 +44,9 @@ This is NOT a 2D camera cut out, it is a full 3D mirror.
   - Particles, additive materials etc will have black outlines
   - Opening the menu will cause the mirror transparency to temporarily be disabled
   - Transparent materials behind or in front of the mirror may overwrite or be overwritten by the mirror, adjusting the render queue can help, or as a last resort using stencils.
+
+# Updates
+
+#### 4th Feb 2020
+
+  - Added Cutout variant. This version shouldn't have issues with transparent objects behind/infront of the mirror and should be used if you don't need transparency.
