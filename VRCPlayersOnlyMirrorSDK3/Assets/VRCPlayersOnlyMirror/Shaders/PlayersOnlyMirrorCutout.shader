@@ -6,6 +6,7 @@ Shader "Mirror/VRCPlayersOnlyMirrorCutout"
         [HideInInspector] _ReflectionTex0("", 2D) = "white" {}
         [HideInInspector] _ReflectionTex1("", 2D) = "white" {}
         [Toggle(HideBackground)] _HideBackground("Hide Background", Float) = 0
+        [Toggle(IgnoreEffects)] _IgnoreEffects("Ignore Effects", Float) = 0
         //Stencils
         [Space(50)] _Stencil ("Stencil ID", Float) = 0
         [Enum(UnityEngine.Rendering.CompareFunction)] _StencilCompareAction ("Stencil Compare Function", int) = 0
@@ -45,6 +46,7 @@ Shader "Mirror/VRCPlayersOnlyMirrorCutout"
             sampler2D _MainTex;
             float4 _MainTex_ST;
             float _HideBackground;
+            float _IgnoreEffects;
 
             sampler2D _ReflectionTex0;
             sampler2D _ReflectionTex1;
@@ -94,7 +96,7 @@ Shader "Mirror/VRCPlayersOnlyMirrorCutout"
                 // Hiding background
                 if (_HideBackground) {
                     refl.a = refl.a > 0 ? 1 : 
-                                    dot(refl.rgb, fixed3(1,1,1)) / 3 > 0.01 ? 1 : 0;
+                                    _IgnoreEffects != 1 && dot(refl.rgb, fixed3(1,1,1)) / 3 > 0.01 ? 1 : 0;
                     clip(refl.a);
                 } else {
                     refl.a = 1;

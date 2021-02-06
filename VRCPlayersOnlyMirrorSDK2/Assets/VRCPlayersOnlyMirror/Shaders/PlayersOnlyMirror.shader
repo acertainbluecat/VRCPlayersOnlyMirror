@@ -6,6 +6,7 @@
         [HideInInspector] _ReflectionTex0("", 2D) = "white" {}
         [HideInInspector] _ReflectionTex1("", 2D) = "white" {}
         [Toggle(HideBackground)] _HideBackground("Hide Background", Float) = 0
+        [Toggle(IgnoreEffects)] _IgnoreEffects("Ignore Effects", Float) = 0
         _Transparency("Transparency", Range(0, 1)) = 1
         _TransparencyTex("Transparency Mask", 2D) = "white" {}
         _DistanceFade("Distance Fade", Range(0,20)) = 0
@@ -49,6 +50,7 @@
             sampler2D _MainTex;
             float4 _MainTex_ST;
             float _HideBackground;
+            float _IgnoreEffects;
             float _Transparency;
             float _DistanceFade;
             float _DistanceFadeLength;
@@ -106,7 +108,7 @@
                 // Hiding background
                 if (_HideBackground) {
                     refl.a = refl.a > 0 ? 1 : 
-                                    dot(refl.rgb, fixed3(1,1,1)) / 3 > 0.01 ? 1 : 0;
+                                    _IgnoreEffects != 1 && dot(refl.rgb, fixed3(1,1,1)) / 3 > 0.01 ? 1 : 0;
                 } else {
                     refl.a = 1;
                 }
