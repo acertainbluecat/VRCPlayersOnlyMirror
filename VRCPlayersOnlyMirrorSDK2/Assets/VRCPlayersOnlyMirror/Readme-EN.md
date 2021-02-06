@@ -28,6 +28,7 @@ This is NOT a 2D camera cut out, it is a full 3D mirror.
 
   - **Base (RBG)** - Overlays a texture onto the reflection, same behavior as the default mirror shader
   - **Hide Background** - Hides the background, requires the TransparentBackground shader acting as a fake background for the mirror for this to work
+  - **Ignore Effects** - Attempts to Ignore effects like particles, lens flare. Will still show up if they are in front of your character however. 
   - **Transparency** - Adjust transparency of the mirror
   - **Transparency Mask** - Texture mask that adjusts the transparency of the mirror, goes from white for fully opauque, to fully transparent with black. Mainly used to adjust the transparency of the entire mirror in real time for SDK2 as you can't animate mirror material properties on SDK2. See Next section for more details.
   - **Distance Fade** - Distance before the mirror starts fading to zero alpha. Disabled at 0.
@@ -47,6 +48,7 @@ This is NOT a 2D camera cut out, it is a full 3D mirror.
 
 # Updates
 
-#### 4th Feb 2020
+#### 6th Feb 2020
 
   - Added Cutout variant. This version shouldn't have issues with transparent objects behind/infront of the mirror and should be used if you don't need transparency.
+  - Added Ignore Effects toggle. Tries to ignore particle effects, lens flare and certain transparent effects which are read as zero alpha from mirror reflection render texture. 
