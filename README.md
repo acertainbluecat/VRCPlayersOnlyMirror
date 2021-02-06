@@ -11,8 +11,8 @@ This is NOT a 2D camera cut out, it is a full 3D mirror.
   - Performance cost more or less the same as a LQ mirror, with 1 additional drawcall
 
 # Downloads
-  - [For SDK2 Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.1/VRCPlayersOnlyMirrorSDK2_v0.1.1.unitypackage)
-  - [For SDK3 Udon Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.1/VRCPlayersOnlyMirrorSDK3_v0.1.1.unitypackage)
+  - [For SDK2 Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.1/VRCPlayersOnlyMirrorSDK2_v0.1.2.unitypackage)
+  - [For SDK3 Udon Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.1/VRCPlayersOnlyMirrorSDK3_v0.1.2.unitypackage)
 
 # Requirements
   - VRChat SDK2 or SDK3

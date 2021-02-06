@@ -11,8 +11,8 @@ VRCPlayersOnlyMirrorは、背景のないプレーヤーのみを表示するシ
   - パフォーマンスコストはLQミラーとほぼ同じですが、drawcallが1つ追加されます
 
 # ダウンロード
-  - [For SDK2 Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.1/VRCPlayersOnlyMirrorSDK2_v0.1.1.unitypackage)
-  - [For SDK3 Udon Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.1/VRCPlayersOnlyMirrorSDK3_v0.1.1.unitypackage)
+  - [For SDK2 Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.1/VRCPlayersOnlyMirrorSDK2_v0.1.2.unitypackage)
+  - [For SDK3 Udon Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.1/VRCPlayersOnlyMirrorSDK3_v0.1.2.unitypackage)
 
 # 要件
   - VRChat SDK2 or SDK3
