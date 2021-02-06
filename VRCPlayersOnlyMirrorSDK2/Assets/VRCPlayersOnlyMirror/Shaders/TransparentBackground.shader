@@ -1,13 +1,13 @@
 ﻿Shader "Mirror/TransparentBackground" {
 Properties {
-	[Enum(UnityEngine.Rendering.CullMode)] _CullMode("Cull Mode", Int) = 1
-	[Toggle(MIRROR_ONLY)] _MirrorOnly("Mirror Only", Float) = 0
+    [Enum(UnityEngine.Rendering.CullMode)] _CullMode("Cull Mode", Int) = 1
+    [Toggle(MIRROR_ONLY)] _MirrorOnly("Mirror Only", Float) = 0
 }
 
 SubShader {
     Tags { "RenderType"="Opaque" "IgnoreProjector"="True" "Queue"="Geometry"}
-	ColorMask RGBA
-	Cull [_CullMode]
+    ColorMask RGBA
+    Cull [_CullMode]
 
     Pass {
         CGPROGRAM
@@ -27,7 +27,7 @@ SubShader {
             };
 
             fixed4 _Color;
-			float _MirrorOnly;
+            float _MirrorOnly;
 
             v2f vert (appdata_t v)
             {
@@ -35,9 +35,9 @@ SubShader {
                 UNITY_SETUP_INSTANCE_ID(v);
                 UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
                 o.vertex = UnityObjectToClipPos(v.vertex);
-				if (_MirrorOnly == 1 & (unity_CameraProjection[2][0] == 0.f || unity_CameraProjection[2][1] == 0.f)){
-					o.vertex = -1;
-				}
+                if (_MirrorOnly == 1 & (unity_CameraProjection[2][0] == 0.f || unity_CameraProjection[2][1] == 0.f)){
+                    o.vertex = -1;
+                }
                 UNITY_TRANSFER_FOG(o,o.vertex);
                 return o;
             }

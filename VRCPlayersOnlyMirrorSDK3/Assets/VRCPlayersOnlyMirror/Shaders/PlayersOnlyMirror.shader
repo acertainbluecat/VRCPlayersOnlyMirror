@@ -11,7 +11,7 @@
         _DistanceFade("Distance Fade", Range(0,20)) = 0
         _DistanceFadeLength("Distance Fade Length", Range(0,10)) = 1
         //Stencils
-        _Stencil ("Stencil ID", Float) = 0
+        [Space(50)] _Stencil ("Stencil ID", Float) = 0
         [Enum(UnityEngine.Rendering.CompareFunction)] _StencilCompareAction ("Stencil Compare Function", int) = 0
         [Enum(UnityEngine.Rendering.StencilOp)] _StencilOp ("Stencil Pass Operation", int) = 0
         [Enum(UnityEngine.Rendering.StencilOp)] _StencilFail ("Stencil Fail Operation", int) = 0
