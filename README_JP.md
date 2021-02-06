@@ -10,6 +10,10 @@ VRCPlayersOnlyMirrorは、背景のないプレーヤーのみを表示するシ
   - PCとQuestの両方の世界で動作します
   - パフォーマンスコストはLQミラーとほぼ同じですが、drawcallが1つ追加されます
 
+# ダウンロード
+  - [For SDK2 Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.1/VRCPlayersOnlyMirrorSDK2_v0.1.1.unitypackage)
+  - [For SDK3 Udon Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.1/VRCPlayersOnlyMirrorSDK3_v0.1.1.unitypackage)
+
 # 要件
   - VRChat SDK2 or SDK3
 
@@ -45,4 +49,10 @@ VRCPlayersOnlyMirrorは、背景のないプレーヤーのみを表示するシ
   - メニューを開くと、ミラーの透明度が一時的に無効になります 
   - ミラーの後ろまたは前にある透明なマテリアルは、ミラーによって上書きまたは上書きされる可能性があります。レンダリングキューを調整すると、ステンシルを使用した最後の手段として役立ちます。
 
-日本語が苦手なのでGoogle翻訳を使いました。ご不便をおかけして申し訳ございません。 
+# Demo
+
+この鏡が実際に動いているのを見たい場合は、私の公開地図の一つ、Winter Solaceで見つけることができます。 
+https://vrchat.com/home/world/wrld_8899947f-8e19-4981-b327-a63be233706a
+
+![demo1](https://nyanpa.su/i/MKH21bPq.jpg)
+![demo2](https://nyanpa.su/i/gEzZ1bQD.jpg)

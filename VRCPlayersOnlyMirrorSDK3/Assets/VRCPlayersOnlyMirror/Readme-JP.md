@@ -19,6 +19,11 @@ VRCPlayersOnlyMirrorは、背景のないプレーヤーのみを表示するシ
   - サンプルシーンとprefabが提供されています
   - ミラーが正しく機能するには「TransparentBackground」が必要ですが、VRCPlayersOnlyMirrorを使用していない他のミラーがシーンにある場合は、別のレイヤーに配置して、VRCPlayersOnlyMirrorのレイヤーにのみ表示することを検討してください。 それ以外の場合は、VRCPlayersOnlyMirrorもオンになっている場合は、フルミラーなど、他のミラーに表示されます。 必要に応じてサイズを変更します。
 
+# シェーダの種類
+
+  - **PlayersOnlyMirror** - 透明度と距離フェード付きの通常バージョン
+  - **PlayersOnlyMirrorCutout** - カットアウトのみのバリエーションで、透明度や距離フェードはありません。
+
 # Shader Settings
 
   - **Base (RBG)** - デフォルトのミラーシェーダーと同じ動作で、テクスチャを反射にオーバーレイします 
