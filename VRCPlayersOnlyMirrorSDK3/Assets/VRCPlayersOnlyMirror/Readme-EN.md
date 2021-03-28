@@ -1,4 +1,4 @@
-# VRCPlayersOnlyMirror
+# VRCPlayersOnlyMirror v0.1.2
 
 Tired of having to choose between admiring the scenery in a nice map or staring at your own reflection? Now you can do both at the same time!
 VRCPlayersOnlyMirror is a simple mirror prefab that shows players only without any background.

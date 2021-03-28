@@ -1,4 +1,4 @@
-# VRCPlayersOnlyMirror
+# VRCPlayersOnlyMirror v0.1.2
 
 素敵な地図で景色を眺めるか、自分の反射を見つめるかを選択するのにうんざりしていませんか？ 今、あなたは両方を同時に行うことができます！
 VRCPlayersOnlyMirrorは、背景のないプレーヤーのみを表示するシンプルなミラーprefabです。

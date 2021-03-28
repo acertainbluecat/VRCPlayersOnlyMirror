@@ -1,4 +1,4 @@
-# VRCPlayersOnlyMirror
+# VRCPlayersOnlyMirror v0.1.2
 
 Tired of having to choose between admiring the scenery in a nice map or staring at your own reflection? Now you can do both at the same time!
 VRCPlayersOnlyMirror is a simple mirror prefab that shows players only without any background.
@@ -18,7 +18,7 @@ This is NOT a 2D camera cut out, it is a full 3D mirror.
   - Import either the SDK2 or SDK3 unitypackage depending on your project
   - Example scene is provided as well as a prefab
   - The "TransparentBackground" is required for the mirror to work properly, however if you have other mirrors in your scene that are not using VRCPlayersOnlyMirror, consider putting it on a different layer and show it on VRCPlayersOnlyMirror's layers only. Other wise it will show up in other mirrors, such as a full mirror if VRCPlayersOnlyMirror is also on. Resize as needed.
-
+  
 # Shader Types
 
   - **PlayersOnlyMirror** - Regular version with transparency and distance fade
