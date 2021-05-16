@@ -1,7 +1,7 @@
 ﻿Shader "Mirror/TransparentBackground" {
 Properties {
     [Enum(UnityEngine.Rendering.CullMode)] _CullMode("Cull Mode", Int) = 1
-    [Toggle(MIRROR_ONLY)] _MirrorOnly("Mirror Only", Float) = 0
+    [ToggleUI(MIRROR_ONLY)] _MirrorOnly("Mirror Only", Float) = 0
 }
 
 SubShader {

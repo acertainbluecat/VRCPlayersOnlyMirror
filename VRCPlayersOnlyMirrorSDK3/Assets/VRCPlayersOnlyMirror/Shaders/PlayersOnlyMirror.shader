@@ -5,8 +5,8 @@
         _MainTex("Base (RGB)", 2D) = "white" {}
         [HideInInspector] _ReflectionTex0("", 2D) = "white" {}
         [HideInInspector] _ReflectionTex1("", 2D) = "white" {}
-        [Toggle(HideBackground)] _HideBackground("Hide Background", Float) = 0
-        [Toggle(IgnoreEffects)] _IgnoreEffects("Ignore Effects", Float) = 0
+        [ToggleUI(HideBackground)] _HideBackground("Hide Background", Float) = 0
+        [ToggleUI(IgnoreEffects)] _IgnoreEffects("Ignore Effects", Float) = 0
         _Transparency("Transparency", Range(0, 1)) = 1
         _TransparencyTex("Transparency Mask", 2D) = "white" {}
         _DistanceFade("Distance Fade", Range(0,20)) = 0

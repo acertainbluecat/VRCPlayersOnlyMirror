@@ -11,8 +11,8 @@ This is NOT a 2D camera cut out, it is a full 3D mirror.
   - Performance cost more or less the same as a LQ mirror, with 1 additional drawcall
 
 # Downloads
-  - [For SDK2 Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.2/VRCPlayersOnlyMirrorSDK2_v0.1.2.unitypackage)
-  - [For SDK3 Udon Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.2/VRCPlayersOnlyMirrorSDK3_v0.1.2.unitypackage)
+  - [For SDK2 Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.3/VRCPlayersOnlyMirrorSDK2_v0.1.3.unitypackage)
+  - [For SDK3 Udon Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.3/VRCPlayersOnlyMirrorSDK3_v0.1.3.unitypackage)
 
 # Requirements
   - VRChat SDK2 or SDK3
@@ -52,7 +52,11 @@ This is NOT a 2D camera cut out, it is a full 3D mirror.
 
 # Updates
 
-#### 6th Feb 2020
+#### 16th May 2021
+
+  - Switched from Toggle to ToggleUI in shaders to reduce shader keywords used
+
+#### 6th Feb 2021
 
   - Added Cutout variant. This version shouldn't have issues with transparent objects behind/infront of the mirror and should be used if you don't need transparency.
   - Added Ignore Effects toggle. Tries to ignore particle effects, lens flare and certain transparent effects which are read as zero alpha from mirror reflection render texture. 

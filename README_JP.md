@@ -11,8 +11,8 @@ VRCPlayersOnlyMirrorは、背景のないプレーヤーのみを表示するシ
   - パフォーマンスコストはLQミラーとほぼ同じですが、drawcallが1つ追加されます
 
 # ダウンロード
-  - [For SDK2 Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.2/VRCPlayersOnlyMirrorSDK2_v0.1.2.unitypackage)
-  - [For SDK3 Udon Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.2/VRCPlayersOnlyMirrorSDK3_v0.1.2.unitypackage)
+  - [For SDK2 Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.3/VRCPlayersOnlyMirrorSDK2_v0.1.3.unitypackage)
+  - [For SDK3 Udon Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.3/VRCPlayersOnlyMirrorSDK3_v0.1.3.unitypackage)
 
 # 要件
   - VRChat SDK2 or SDK3
@@ -52,7 +52,11 @@ VRCPlayersOnlyMirrorは、背景のないプレーヤーのみを表示するシ
 
 # Updates
 
-#### 6th Feb 2020
+#### 16th May 2021
+
+  - シェーダーでToggleからToggleUIに変更し、使用するシェーダーキーワードを減らしました。
+
+#### 6th Feb 2021
 
   - Cutoutバリアントを追加しました。このバージョンでは、ミラーの前後にある透過オブジェクトの問題は発生しないはずで、透過を必要としない場合に使用してください。  
   - 効果を無視するトグルを追加しました。パーティクル効果、レンズフレア、鏡面反射レンダリングテクスチャからゼロアルファとして読み込まれる特定の透明効果を無視しようとします。
