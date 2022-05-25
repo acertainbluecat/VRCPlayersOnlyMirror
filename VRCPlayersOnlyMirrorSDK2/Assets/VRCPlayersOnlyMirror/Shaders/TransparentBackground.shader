@@ -35,7 +35,7 @@ SubShader {
                 UNITY_SETUP_INSTANCE_ID(v);
                 UNITY_INITIALIZE_VERTEX_OUTPUT_STEREO(o);
                 o.vertex = UnityObjectToClipPos(v.vertex);
-                if (_MirrorOnly == 1 & (unity_CameraProjection[2][0] == 0.f || unity_CameraProjection[2][1] == 0.f)){
+                if (_MirrorOnly == 1 & !(0 < dot(cross(UNITY_MATRIX_V[0], UNITY_MATRIX_V[1]), UNITY_MATRIX_V[2]))){
                     o.vertex = -1;
                 }
                 UNITY_TRANSFER_FOG(o,o.vertex);
