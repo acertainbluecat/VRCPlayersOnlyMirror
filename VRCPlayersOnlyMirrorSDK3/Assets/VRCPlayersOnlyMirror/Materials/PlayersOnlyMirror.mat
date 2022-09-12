@@ -73,6 +73,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AVG: 1
+    - _AlphaTweakLevel: 0.75
     - _B: 1
     - _BumpScale: 1
     - _CullMode: 1
@@ -86,6 +87,7 @@ Material:
     - _GerstnerIntensity: 1
     - _Glossiness: 0.5
     - _HideBackground: 1
+    - _IgnoreEffects: 0
     - _Metallic: 0
     - _MirrorOnly: 0
     - _Mode: 0
@@ -93,6 +95,7 @@ Material:
     - _Parallax: 0.02
     - _R: 1
     - _Shininess: 200
+    - _SmoothEdge: 1
     - _SrcBlend: 1
     - _Stencil: 0
     - _StencilCompareAction: 0

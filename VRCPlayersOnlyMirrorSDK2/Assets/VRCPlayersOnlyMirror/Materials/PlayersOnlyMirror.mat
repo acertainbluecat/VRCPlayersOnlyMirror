@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: PlayersOnlyMirror
   m_Shader: {fileID: 4800000, guid: 43a12c08d43d31a478d291c1b9a0aa21, type: 3}
-  m_ShaderKeywords: CUTOUT HideBackground
+  m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -73,6 +73,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AVG: 1
+    - _AlphaTweakLevel: 0.75
     - _B: 1
     - _BumpScale: 1
     - _Cutoff: 0.5
@@ -85,12 +86,15 @@ Material:
     - _GerstnerIntensity: 1
     - _Glossiness: 0.5
     - _HideBackground: 1
+    - _IgnoreAddtive: 1
+    - _IgnoreEffects: 0
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _R: 1
     - _Shininess: 200
+    - _SmoothEdge: 1
     - _SrcBlend: 1
     - _Stencil: 0
     - _StencilCompareAction: 0

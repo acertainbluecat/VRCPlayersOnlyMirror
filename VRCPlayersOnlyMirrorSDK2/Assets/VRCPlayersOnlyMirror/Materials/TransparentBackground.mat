@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: TransparentBackground
   m_Shader: {fileID: 4800000, guid: e2f63b9e8c56190489fb11c0ff985e2a, type: 3}
-  m_ShaderKeywords: LOD_FADE_CROSSFADE MIRROR_ONLY _REQUIRE_UV2
+  m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0

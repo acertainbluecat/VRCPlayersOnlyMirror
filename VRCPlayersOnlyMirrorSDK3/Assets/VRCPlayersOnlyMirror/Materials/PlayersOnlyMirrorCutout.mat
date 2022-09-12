@@ -85,6 +85,7 @@ Material:
     - _GerstnerIntensity: 1
     - _Glossiness: 0.5
     - _HideBackground: 1
+    - _IgnoreEffects: 0
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1

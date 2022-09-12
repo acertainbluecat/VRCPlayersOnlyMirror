@@ -1,4 +1,4 @@
-# v0.1.4, VRCSDK3-WORLD-2022.08.29.20.48_Public
+# v0.1.4+, VRCSDK3-WORLD-2022.08.29.20.48_Public
 
   - VRCMirrorがカスタムカメラクリアフラグをサポートするようになったため、"TransparentBackground "マスクの必要性を削除しました。
   - このバージョンでは、VRCSDK3-WORLD-2022.08.29.20.48_Public またはそれ以降を使用していることを確認する必要があります。
@@ -16,8 +16,8 @@ VRCPlayersOnlyMirrorは、背景のないプレーヤーのみを表示するシ
   - LQミラーとほぼ同等の性能コスト
 
 # ダウンロード
-  - [For SDK2 Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.3/VRCPlayersOnlyMirrorSDK2_v0.1.3.unitypackage)
-  - [For SDK3 Udon Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.4/VRCPlayersOnlyMirrorSDK3_v0.1.4.unitypackage)
+  - [For SDK2 Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.3/VRCPlayersOnlyMirrorSDK2_v0.1.5.unitypackage)
+  - [For SDK3 Udon Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.4/VRCPlayersOnlyMirrorSDK3_v0.1.5.unitypackage)
 
 # 要件
   - VRChat SDK2 or SDK3
@@ -53,12 +53,17 @@ VRCPlayersOnlyMirrorは、背景のないプレーヤーのみを表示するシ
 
 # 欠点
 
+  - Smooth Edgeをオンにした場合。
+    - 使用するシェーダによっては、アバターの透明マテリアルの一部が正しく透明化されない場合があります。(UTSではこの問題があります)
   - Smooth Edgeを利用しない場合、
     - ほとんどの透明な素材は鏡の中では不透明に見えます
     - 粒子、添加剤などは黒い輪郭になります
   - ミラーの後ろまたは前にある透明なマテリアルは、ミラーによって上書きまたは上書きされる可能性があります。レンダリングキューを調整すると、ステンシルを使用した最後の手段として役立ちます。
 
 # Updates
+
+#### 12th Sep 2022
+  - Smooth Edgeトグルを追加（xiphia氏に感謝します）
 
 #### 31st Aug 2022
 

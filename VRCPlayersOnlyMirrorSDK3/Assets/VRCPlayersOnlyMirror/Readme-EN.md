@@ -1,4 +1,6 @@
-# VRCPlayersOnlyMirror v0.1.4map or staring at your own reflection? Now you can do both at the same time!
+# VRCPlayersOnlyMirror v0.1.5
+
+Tired of having to choose between admiring the scenery in a nice map or staring at your own reflection? Now you can do both at the same time!
 VRCPlayersOnlyMirror is a simple mirror prefab that shows players only without any background.
 This is NOT a 2D camera cut out, it is a full 3D mirror.
 
@@ -10,7 +12,7 @@ This is NOT a 2D camera cut out, it is a full 3D mirror.
 
 # Requirements
   - VRChat SDK2 or SDK3
-  - **!!! SDK3 VRCSDK3-WORLD-2022.08.29.20.48_Public or newer for v0.1.4 !!!**
+  - **!!! SDK3 VRCSDK3-WORLD-2022.08.29.20.48_Public or newer for v0.1.4+ !!!**
 
 # How to
 
@@ -41,13 +43,18 @@ This is NOT a 2D camera cut out, it is a full 3D mirror.
   - If you have multiple mirrors and want independent transparency sliders, you will need to make separate materials, render textures and camera's for each of them
 
 # Caveats
-
+  
+  - If you turn on Smooth Edge,
+    - Depending on shader used, transparent materials on avatars may cause certain parts of your avatar to be transparent incorrectly. (UTS has this problem)
   - If you turn off Smooth Edge,
     - Most transparent materials will appear opaque in the mirror
     - Particles, additive materials etc will have black outlines
   - Transparent materials behind or in front of the mirror may overwrite or be overwritten by the mirror, adjusting the render queue can help, or as a last resort using stencils.
 
 # Updates
+
+#### 12th Sep 2022
+  - Added Smooth Edge Toggle (Thanks to xiphia)
 
 #### 31st Aug 2022
 

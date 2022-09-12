@@ -1,7 +1,7 @@
-# v0.1.4 for VRCSDK3-WORLD-2022.08.29.20.48_Public
+# v0.1.4+ for VRCSDK3-WORLD-2022.08.29.20.48_Public
 
   - Removes requirement of "TransparentBackground" mask, as VRCMirror now supports custom camera clear flags
-  - Please make sure you use VRCSDK3-WORLD-2022.08.29.20.48_Public or newer for this version
+  - Please make sure you use VRCSDK3-WORLD-2022.08.29.20.48_Public or newer for this version or later
 
 # VRCPlayersOnlyMirror
 
@@ -16,8 +16,8 @@ This is NOT a 2D camera cut out, it is a full 3D mirror.
   - Performance cost more or less the same as a LQ mirror
 
 # Downloads
-  - [For SDK2 Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.3/VRCPlayersOnlyMirrorSDK2_v0.1.3.unitypackage)
-  - [For SDK3 Udon Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.4/VRCPlayersOnlyMirrorSDK3_v0.1.4.unitypackage)
+  - [For SDK2 Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.3/VRCPlayersOnlyMirrorSDK2_v0.1.5.unitypackage)
+  - [For SDK3 Udon Worlds](https://github.com/acertainbluecat/VRCPlayersOnlyMirror/releases/download/v0.1.4/VRCPlayersOnlyMirrorSDK3_v0.1.5.unitypackage)
 
 # Requirements
   - VRChat SDK2 or SDK3
@@ -52,13 +52,18 @@ This is NOT a 2D camera cut out, it is a full 3D mirror.
   - If you have multiple mirrors and want independent transparency sliders, you will need to make separate materials, render textures and camera's for each of them
 
 # Caveats
-
+  
+  - If you turn on Smooth Edge,
+    - Depending on shader used, transparent materials on avatars may cause certain parts of your avatar to be transparent incorrectly. (UTS has this problem)
   - If you turn off Smooth Edge,
     - Most transparent materials will appear opaque in the mirror
     - Particles, additive materials etc will have black outlines
   - Transparent materials behind or in front of the mirror may overwrite or be overwritten by the mirror, adjusting the render queue can help, or as a last resort using stencils.
 
 # Updates
+
+#### 12th Sep 2022
+  - Added Smooth Edge Toggle (Thanks to xiphia)
 
 #### 31st Aug 2022
 
