@@ -11,7 +11,7 @@
         _TransparencyTex("Transparency Mask", 2D) = "white" {}
         _DistanceFade("Distance Fade", Range(0,20)) = 0
         _DistanceFadeLength("Distance Fade Length", Range(0,10)) = 1
-        [ToggleUI(SmoothEdge)] _SmoothEdge("Smooth Edge", Float) = 0
+        [ToggleUI(SmoothEdge)] _SmoothEdge("Smooth Edge", Float) = 1
         _AlphaTweakLevel("Alpha Tweak Level", Range(0,1)) = 0.75
         //Stencils
         [Space(50)] _Stencil ("Stencil ID", Float) = 0
@@ -111,15 +111,16 @@
 
                 // Hiding background
                 if (_HideBackground) {
+                    half power = dot(refl.rgb, fixed3(1,1,1)) / 3;
+                    bool applyIgnoreEffects = ! _IgnoreEffects && power > 0.01;
                     if (_SmoothEdge)
                     {
-                        half power = dot(refl.rgb, fixed3(1,1,1)) / 3;
                         refl.a = refl.a > 0 ? refl.a : 
-                                        _IgnoreEffects != 1 && power > 0.01 ? power : 0;
+                                        applyIgnoreEffects ? power : 0;
                         refl.a = smoothstep(0, _AlphaTweakLevel, refl.a);
                     } else {
                         refl.a = refl.a > 0 ? 1 : 
-                                        _IgnoreEffects != 1 && dot(refl.rgb, fixed3(1,1,1)) / 3 > 0.01 ? 1 : 0;
+                                        applyIgnoreEffects ? 1 : 0;
                     }
                 } else {
                     refl.a = 1;
