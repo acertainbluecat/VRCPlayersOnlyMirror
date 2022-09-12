@@ -42,6 +42,8 @@ This is NOT a 2D camera cut out, it is a full 3D mirror.
   - **Transparency Mask** - Texture mask that adjusts the transparency of the mirror, goes from white for fully opauque, to fully transparent with black. Mainly used to adjust the transparency of the entire mirror in real time for SDK2 as you can't animate mirror material properties on SDK2. See Next section for more details.
   - **Distance Fade** - Distance before the mirror starts fading to zero alpha. Disabled at 0.
   - **Distance Fade Length** - The length of distance traveled needed to fade to zero alpha.
+  - **Smooth Edge** - Make edge smoother and avoid transparent object will be rendered opaque.
+  - **Alpha Tweak Level** - Adjust smooth edge power.
 
 # SDK2
 
@@ -50,9 +52,10 @@ This is NOT a 2D camera cut out, it is a full 3D mirror.
   - If you have multiple mirrors and want independent transparency sliders, you will need to make separate materials, render textures and camera's for each of them
 
 # Caveats
-  
-  - Most transparent materials will appear opaque in the mirror
-  - Particles, additive materials etc will have black outlines
+
+  - If you turn off Smooth Edge,
+    - Most transparent materials will appear opaque in the mirror
+    - Particles, additive materials etc will have black outlines
   - Transparent materials behind or in front of the mirror may overwrite or be overwritten by the mirror, adjusting the render queue can help, or as a last resort using stencils.
 
 # Updates
