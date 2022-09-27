@@ -3,6 +3,9 @@
   - VRCMirrorがカスタムカメラクリアフラグをサポートするようになったため、"TransparentBackground "マスクの必要性を削除しました。
   - このバージョンでは、VRCSDK3-WORLD-2022.08.29.20.48_Public またはそれ以降を使用していることを確認する必要があります。
 
+「VRC Mirror Reflection」コンポーネントは、ミラーに背景が残っている場合、次のように表示されることを確認してください。
+![vrcmirrorreflection](https://cdn.nyanpa.su/i/PiMX2EB0.jpg)
+
 # VRCPlayersOnlyMirror
 
 素敵な地図で景色を眺めるか、自分の反射を見つめるかを選択するのにうんざりしていませんか？ 今、あなたは両方を同時に行うことができます！

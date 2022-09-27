@@ -3,6 +3,9 @@
   - Removes requirement of "TransparentBackground" mask, as VRCMirror now supports custom camera clear flags
   - Please make sure you use VRCSDK3-WORLD-2022.08.29.20.48_Public or newer for this version or later
 
+Please make sure your "VRC Mirror Reflection" component looks like this if the background is still visible in the mirror
+![vrcmirrorreflection](https://cdn.nyanpa.su/i/PiMX2EB0.jpg)
+
 # VRCPlayersOnlyMirror
 
 Tired of having to choose between admiring the scenery in a nice map or staring at your own reflection? Now you can do both at the same time!
